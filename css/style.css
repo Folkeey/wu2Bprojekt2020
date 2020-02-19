@@ -1,37 +1,52 @@
 .grid1{
     display: grid;
     grid-template-areas:
-    "hd1 nv1 nv2 nv3 nv4 nv5 nv6"
+    "hd1 hd1 hd1 hd1 hd1 hd1"
+    "nv1 nv2 nv3 nv4 nv5 nv6"
+    "ar1 ar1 ar1 ar1 ar1 as1"
+    "ar1 ar1 ar1 ar1 ar1 as2"
+    "ar1 ar1 ar1 ar1 ar1 as3"
 ;
-    
-    
+
+gap: 10px;
+height: 1oovh;
+
 
 }
+img{width: 100px;
 
-#hd1{
+}
+#hd1{   
 grid-area: hd1;
+
 }
 
 #nv1{
-grid-area: nv1;     
+grid-area: nv1; 
+background-color:green;    
 }
 
 #nv2{
-grid-area: nv2;     
+grid-area: nv2;  
+background-color: grey;    
 }
 
 #nv3{
-grid-area: nv3;     
+grid-area: nv3; 
+background-color: grey;    
 }
 
 #nv4{
-grid-area: nv4;     
+grid-area: nv4;    
+background-color: grey; 
 }
 
 #nv5{
-grid-area: nv5;     
+grid-area: nv5;  
+background-color: grey;    
 }
 
 #nv6{
 grid-area: nv6;
+background-color: grey; 
 }
