@@ -1,0 +1,37 @@
+.grid1{
+    display: grid;
+    grid-template-areas:
+    "hd1 nv1 nv2 nv3 nv4 nv5 nv6"
+;
+    
+    
+
+}
+
+#hd1{
+grid-area: hd1;
+}
+
+#nv1{
+grid-area: nv1;     
+}
+
+#nv2{
+grid-area: nv2;     
+}
+
+#nv3{
+grid-area: nv3;     
+}
+
+#nv4{
+grid-area: nv4;     
+}
+
+#nv5{
+grid-area: nv5;     
+}
+
+#nv6{
+grid-area: nv6;
+}
