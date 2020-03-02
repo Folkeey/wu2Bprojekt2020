@@ -23,7 +23,8 @@ grid-area: hd1;
 
 #nv1{
 grid-area: nv1; 
-background-color:green;    
+background-color:green;   
+border: 10px black; 
 }
 
 #nv2{
