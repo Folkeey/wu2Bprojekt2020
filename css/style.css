@@ -1,22 +1,27 @@
-@media screen and (min-width: 992px) {
 
+body{
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+    
 .grid1{
     display: grid;
     grid-template-areas:
     
-    "hd1 nv1 nv2 nv3 nv4 nv5 "
-    "ar1 ar1 ar1 ar1 ar1 as1"
-    "ar1 ar1 ar1 ar1 ar1 as2"
-    "ar1 ar1 ar1 ar1 ar1 as3" ;
+    "hd1 nv"
+    "ar1 as1"
+    "ar1 as2"
+    "ar1 as3" ;
 
     grid-template-rows: 10vh auto;
 
-gap: 10px;
-height: 100vh;
+    gap: 10px;
+    height: 100vh;
 
 
 }
-img{
+#logo{
     width: 10vw;
 }
 
@@ -75,23 +80,55 @@ background-color: grey;
 #meny{
     display:none;
 }
+#nv{
+    grid-area: nv;
+    background-color:white;
+    grid-template-areas: 
+    "nv1 nv2 nv3 nv4 nv5";
+    display: grid;
+    gap:10px;
 }
 
 
+@media screen and (max-width: 450px) {
 .grid1{
     display: grid;
     grid-template-areas:
     
-    "hd1 nv"
-    "ar1 ar1"
+    "hd1"
+    "ar1"
     ;
-
-    grid-template-rows: 10vh auto;
-
+    width: 80vw;
+    gap:none;
+    /* grid-template-rows: 10vh auto;  */
+    margin:none;
 ;
 
 }
-#meny{
-    grid-area: nv;
-    background-color: cornsilk;
+aside{
+    display: none;
+
 }
+#nv{
+    grid-template-areas: 
+    "nv1"
+    "nv2"
+    "nv3"
+    "nv4"
+    "nv5"
+    ;
+    position: fixed; 
+    
+    
+    width: 20vw;
+    overflow-x:hidden;
+
+}
+.button{ 
+    width:10vw;
+    top: 1px;
+    right:10px;
+
+}
+}
+
