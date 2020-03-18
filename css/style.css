@@ -1,21 +1,25 @@
+@media screen and (min-width: 992px) {
+
 .grid1{
     display: grid;
     grid-template-areas:
-    "hd1 hd1 hd1 hd1 hd1 hd1"
-    "nv1 nv2 nv3 nv4 nv5 nv6"
+    
+    "hd1 nv1 nv2 nv3 nv4 nv5 "
     "ar1 ar1 ar1 ar1 ar1 as1"
     "ar1 ar1 ar1 ar1 ar1 as2"
-    "ar1 ar1 ar1 ar1 ar1 as3"
-;
+    "ar1 ar1 ar1 ar1 ar1 as3" ;
+
+    grid-template-rows: 10vh auto;
 
 gap: 10px;
-height: 1oovh;
+height: 100vh;
 
 
 }
-img{width: 100px;
-
+img{
+    width: 10vw;
 }
+
 #hd1{   
 grid-area: hd1;
 
@@ -29,9 +33,12 @@ border: 10px black;
 
 #nv2{
 grid-area: nv2;  
-background-color: grey;    
+background-color: grey;   
+height: 100%;
 }
-
+a {
+    text-decoration: none;
+}
 #nv3{
 grid-area: nv3; 
 background-color: grey;    
@@ -46,8 +53,45 @@ background-color: grey;
 grid-area: nv5;  
 background-color: grey;    
 }
+#ar1{
+    grid-area: ar1;
+    background-color: chartreuse;
+}
 
-#nv6{
-grid-area: nv6;
-background-color: grey; 
+#as1{
+    grid-area:as1 ;
+    background-color: blue;
+}
+
+#as2{
+    grid-area:as2 ;
+    background-color: blue;
+}
+
+#as3{
+    grid-area:as3 ;
+    background-color: blue;
+}
+#meny{
+    display:none;
+}
+}
+
+
+.grid1{
+    display: grid;
+    grid-template-areas:
+    
+    "hd1 nv"
+    "ar1 ar1"
+    ;
+
+    grid-template-rows: 10vh auto;
+
+;
+
+}
+#meny{
+    grid-area: nv;
+    background-color: cornsilk;
 }
