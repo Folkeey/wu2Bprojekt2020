@@ -1,5 +1,8 @@
-function menu() {
-    let menu = document.querySelector("#menu");
-    menu.classList.toggle("show");
-}
-document.querySelector("#nv").addEventListener("click", menu)
+function hamburger(){
+    var menu = document.querySelector("#nv")
+    menu.classList.toggle("show")
+    var btn = document.querySelector(".button")
+    btn.classList.toggle("animate")
+};
+    var btn = document.querySelector(".button")
+    btn.addEventListener("click",hamburger)

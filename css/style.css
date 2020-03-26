@@ -9,37 +9,44 @@ body{
     display: grid;
     grid-template-areas:
     
-    "hd1 nv"
+    
     "ar1 as1"
     "ar1 as2"
     "ar1 as3" ;
 
-    grid-template-rows: 10vh auto;
+    grid-template-columns: 70vw auto;
 
     gap: 10px;
     height: 100vh;
-
+    
 
 }
 #logo{
     width: 10vw;
 }
 
-#hd1{   
-grid-area: hd1;
-
-}
 
 #nv1{
 grid-area: nv1; 
 background-color:green;   
 border: 10px black; 
+border-radius: 3px;
 }
 
 #nv2{
 grid-area: nv2;  
 background-color: grey;   
 height: 100%;
+border-radius: 3px;
+
+}
+h1{
+    font-size: 1em;
+    color: black;
+
+}
+p{
+    font-size: 1em;
 }
 a {
     text-decoration: none;
@@ -47,46 +54,64 @@ a {
 #nv3{
 grid-area: nv3; 
 background-color: grey;    
+border-radius: 3px;
 }
 
 #nv4{
 grid-area: nv4;    
 background-color: grey; 
+border-radius: 3px;
 }
 
 #nv5{
 grid-area: nv5;  
-background-color: grey;    
+background-color: grey;   
+border-radius: 3px; 
+
 }
 #ar1{
     grid-area: ar1;
     background-color: chartreuse;
+    border-radius: 3px;
 }
 
 #as1{
     grid-area:as1 ;
     background-color: blue;
+    border-radius: 3px;
 }
 
 #as2{
     grid-area:as2 ;
     background-color: blue;
+    border-radius: 3px;
 }
 
 #as3{
     grid-area:as3 ;
     background-color: blue;
+    border-radius: 3px;
 }
 #meny{
     display:none;
 }
 #nv{
-    grid-area: nv;
+    width: 88vw;
     background-color:white;
     grid-template-areas: 
     "nv1 nv2 nv3 nv4 nv5";
     display: grid;
     gap:10px;
+}
+#hd{
+    grid-area:hd;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+}
+.button{ 
+    display: none;
 }
 
 
@@ -98,11 +123,18 @@ background-color: grey;
     "hd1"
     "ar1"
     ;
-    width: 80vw;
+    width: 100vw;
     gap:none;
-    /* grid-template-rows: 10vh auto;  */
     margin:none;
-;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.01fr;
+}
+
+#hd{
+    width: 100vw;
+}
+#logo{
+    width: 30vw;
 
 }
 aside{
@@ -117,17 +149,41 @@ aside{
     "nv4"
     "nv5"
     ;
+    right: 3px;
     position: fixed; 
     
-    
-    width: 20vw;
+    background:none;
+    width: 45vw;
+    height:60vh ;
     overflow-x:hidden;
+    display: none;
+    top: 20vw;
 
 }
 .button{ 
-    width:10vw;
-    top: 1px;
-    right:10px;
+    width: 10vw;
+    display: flex;
+    margin-left: 310px;
+    top: 10px;
+    position: fixed;
+    transition: transform 0.5s 0s ease;
+}
+.button.animate{
+    transform: rotatez(90deg);
+    transition: transform 0.5s 0s ease;
+    
+}
+p{
+    font-size: 10px;
+    color: black;
+}
+h1{
+    font-size:20px;
+    color: black;
+    text-align: center;
+}
+#nv.show{
+    display: grid;
 
 }
 }
