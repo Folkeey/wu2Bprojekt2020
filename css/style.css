@@ -9,10 +9,10 @@ body{
     display: grid;
     grid-template-areas:
     
-    
     "ar1 as1"
     "ar1 as2"
-    "ar1 as3" ;
+    "ar1 as3"
+    "ft ft" ;
 
     grid-template-columns: 70vw auto;
 
@@ -22,7 +22,8 @@ body{
 
 }
 #logo{
-    width: 10vw;
+    height: auto;
+    width: 200px
 }
 
 
@@ -46,6 +47,8 @@ h1{
 }
 p{
     font-size: 1em;
+    margin: auto;
+    width: 80%;
 }
 a {
     text-decoration: none;
@@ -72,25 +75,25 @@ border: 3px solid black;
 }
 #ar1{
     grid-area: ar1;
-    background-color: none;
     border-radius: 3px;
 }
 
 #as1{
     grid-area:as1 ;
-    background-color: blue;
+    background-color: gray;
     border-radius: 3px;
+    margin-top: 43px;
 }
 
 #as2{
     grid-area:as2 ;
-    background-color: blue;
+    background-color: gray;
     border-radius: 3px;
 }
 
 #as3{
     grid-area:as3 ;
-    background-color: blue;
+    background-color: gray;
     border-radius: 3px;
 }
 #meny{
@@ -125,7 +128,12 @@ border: 3px solid black;
     margin-top:3vw;
     border:10px solid black;
 }
-@media screen and (max-width: 450px) {
+#Planering{
+    grid-area:ft;
+    background-color: gray;
+}
+
+@media screen and (max-width: 900px) {
 .grid1{
     display: grid;
     grid-template-areas:
@@ -133,19 +141,23 @@ border: 3px solid black;
     "hd1"
     "ar1"
     ;
-    width: 100%;
-    gap:none;
-    margin:none;
+    width: 100vw;
+    left:0;
+   
     grid-template-columns: 1fr;
-    grid-template-rows: 0.01fr;
-    background-color: gray;
+    grid-template-rows: 40px 1fr;
+    background-color: gainsboro;
+  
 }
 
-#hd{
+#hd1{
     width: 100vw;
+    height: 50px;
+    position: fixed;
+    background-color: grey;
 }
 #logo{
-    width: 30vw;
+    width: 110px;
 
 }
 aside{
@@ -164,30 +176,31 @@ aside{
     position: fixed; 
     
     background:none;
-    width: 45vw;
-    height:60vh ;
+    width: 45%;
+    height:60vh;
     overflow-x:hidden;
     display: none;
-    top: 20vw;
+    top: 12%;
 
 }
 .button{ 
-    width: 10vw;
+    width: 40px;
     display: flex;
   
-    top: 10px;
+    top: 5px;
     position: fixed;
     right:40px;
     transition: transform 0.5s 0s ease;
 }
 .button.animate{
-    transform: rotatez(90deg);
+    transform: rotate(90deg);
     transition: transform 0.5s 0s ease;
     
 }
-p{
-    font-size: 10px;
+p{  width:80%;
+    font-size: 15px;
     color: black;
+    margin: auto;
 }
 h1{
     font-size:20px;
@@ -199,8 +212,10 @@ h1{
 
 }
 div{
-background-color: gray;
+background-color:gray;
 width: 100%;
+border:2px solid black;
+
 }
 .current{
     background-color: green !important;
