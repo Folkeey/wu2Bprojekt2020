@@ -5,27 +5,26 @@ body{
     overflow-x:hidden;
 }
     
-.grid1{
-    display: grid;
-    grid-template-areas:
-    
-    "ar1 as1"
-    "ar1 as2"
-    "ar1 as3"
-    "ft ft" ;
 
-    grid-template-columns: 70vw auto;
 
-    gap: 10px;
-    height: 100vh;
-    
-
-}
 #logo{
     height: auto;
     width: 200px
 }
 
+h1{
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+p{
+    font-size: 1em;
+    margin: auto;
+    width: 80%;
+}
+a {
+    text-decoration: none;
+}
 
 #nv1{
 grid-area: nv1; 
@@ -40,19 +39,7 @@ background-color: grey;
 border-radius: 3px;
 border: 3px solid black;
 }
-h1{
-    font-size: 2em;
-    color: black;
-    text-align: center;
-}
-p{
-    font-size: 1em;
-    margin: auto;
-    width: 80%;
-}
-a {
-    text-decoration: none;
-}
+
 #nv3{
 grid-area: nv3; 
 background-color: grey;    
@@ -73,29 +60,12 @@ background-color: grey;
 border-radius: 3px; 
 border: 3px solid black;
 }
+
 #ar1{
     grid-area: ar1;
     border-radius: 3px;
 }
 
-#as1{
-    grid-area:as1 ;
-    background-color: gray;
-    border-radius: 3px;
-    margin-top: 43px;
-}
-
-#as2{
-    grid-area:as2 ;
-    background-color: gray;
-    border-radius: 3px;
-}
-
-#as3{
-    grid-area:as3 ;
-    background-color: gray;
-    border-radius: 3px;
-}
 #meny{
     display:none;
 }
