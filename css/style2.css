@@ -1,567 +1,639 @@
-body{
+body {
     overflow-x: hidden;
+    margin: 0;
 }
 
-header{
+header {
     grid-area: titel;
     font-family: monospace;
     font-size: 5vh;
+    text-align: center;
 }
 
-a{
+a {
     text-decoration: none;
     text-align: center;
     font-size: 150%;
     color: black;
 }
 
-#nv1{
-    grid-area: nv1; 
-    background-color: gray;   
+#nv1 {
+    grid-area: nv1;
+    background-color: gray;
     border-radius: 3px;
-    border: 3px solid black;
-}
-    
-#nv2{
-    grid-area: nv2;  
-    background-color: grey;   
-    border-radius: 3px;
-    border: 3px solid black;
-}
-    
-#nv3{
-    grid-area: nv3; 
-    background-color: grey;    
-    border-radius: 3px;
-    border: 3px solid black;
-}
-    
-#nv4{
-    grid-area: nv4;    
-    background-color: grey; 
-    border-radius: 3px;
-    border: 3px solid black;
-}
-    
-#nv5{
-    grid-area: nv5;  
-    background-color: grey;   
-    border-radius: 3px; 
     border: 3px solid black;
 }
 
+#nv2 {
+    grid-area: nv2;
+    background-color: grey;
+    border-radius: 3px;
+    border: 3px solid black;
+}
 
-.current{
+#nv3 {
+    grid-area: nv3;
+    background-color: grey;
+    border-radius: 3px;
+    border: 3px solid black;
+}
+
+#nv4 {
+    grid-area: nv4;
+    background-color: grey;
+    border-radius: 3px;
+    border: 3px solid black;
+}
+
+#nv5 {
+    grid-area: nv5;
+    background-color: grey;
+    border-radius: 3px;
+    border: 3px solid black;
+}
+
+.current {
     background-color: green !important;
 }
 
-.button{ 
+.button {
     display: none;
 }
 
+
 /* Gruppturer */
-.hd{
+
+.hd {
     display: grid;
-    grid-template-areas: 
-    "lg nv";
-    grid-template-columns:1fr 9fr;
+    grid-template-areas: "lg nv";
+    grid-template-columns: 1fr 9fr;
+    margin: 10px;
 }
 
-#logo{
-    grid-area:lg;
+#logo {
+    grid-area: lg;
     height: auto;
     width: 200px
 }
 
-#nv{
-    grid-area:nv;
+#nv {
+    grid-area: nv;
     width: 88vw;
     display: grid;
-    grid-template-areas: 
-    "nv1 nv2 nv3 nv4 nv5";
-    
-    gap:10px;
-    width:100%;
-    height:100%;
+    grid-template-areas: "nv1 nv2 nv3 nv4 nv5";
+    gap: 10px;
+    width: 100%;
+    height: 100%;
 }
 
-.grupp{
+.grupp {
     display: grid;
-    grid-template-areas:
-    "nv"
-    "titel"
-    "bildergrupp"
-    "stats"
-    "ft";
-
+    grid-template-areas: "nv" "titel" "bildergrupp" "stats" "ft";
     gap: 10px;
     height: 100vh;
     width: 100vw;
 }
 
-.bildergrupp{
-    grid-area:bildergrupp;
+.bildergrupp {
+    grid-area: bildergrupp;
     display: grid;
-    grid-template-areas:
-    "fart vaag arg"
-    "fart mek arg" ;
+    grid-template-areas: "fart vaag arg" "fart mek arg";
     gap: 10px;
     height: 70vh;
     margin-top: 10px;
     margin: auto;
 }
 
-.fart{
+.fart {
     grid-area: fart;
     height: 100%;
-    
 }
 
-
-.vaag{
+.vaag {
     grid-area: vaag;
     height: 100%;
-    
-
 }
 
-.arg{
+.arg {
     grid-area: arg;
     height: 100%;
-    
 }
 
-.mek{
+.mek {
     grid-area: mek;
     height: 100%;
-   
 }
+
+
 /* Stats */
-.stats{
+
+.stats {
     grid-area: stats;
     display: grid;
-    grid-template-areas:
-    "snitt strecka max";
+    grid-template-areas: "snitt strecka max";
     height: 100%;
-    width:30%;
-    margin:auto;
+    width: 50%;
+    margin: auto;
     gap: 10px;
 }
 
-
-.snitt{
+.snitt {
     grid-area: snitt;
-    width:auto;
-    height: 30px;
-    background-color:gray;
-    border-radius: 3px; 
+    width: 100%;
+    height: auto;
+    background-color: gray;
+    border-radius: 3px;
     border: 3px solid black;
 }
 
-
-.strecka{
+.strecka {
     grid-area: strecka;
-    width:auto;
-    background-color:gray;
-    height: 30px;
-    border-radius: 3px; 
+    width: 100%;
+    height: auto;
+    background-color: gray;
+    border-radius: 3px;
     border: 3px solid black;
 }
 
-
-.max{
+.max {
     grid-area: max;
-    width:auto;
-    background-color:gray;
-    height: 30px;
-    border-radius: 3px; 
+    width: 100%;
+    height: auto;
+    background-color: gray;
+    border-radius: 3px;
     border: 3px solid black;
 }
 
 
 /* Försäljning */
-.försäljning{
-    grid-area: stats;
+
+.forsaljning {
     display: grid;
-    grid-template-areas:
-    "sadel sadel "
-    "titel pris"
-    "article article"
-    "flera flera";
-    
-    height: 100%;
-    width:30%;
-    margin:auto;
+    grid-template-areas: "titel" "bild" "article" "di" "flera" "de";
+    width: 100%;
     gap: 10px;
+    height: auto;
 }
-.pris{
+
+.kopa {
+    width: 90%;
+    height: 100%;
+    text-align: center;
+    font-size: 50px;
+    font-family: monospace;
+    margin: 0;
+}
+
+.Header_Holder {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.sadel {
+    grid-area: titel;
+}
+
+.pris {
     grid-area: pris;
 }
 
-.article{
-    grid-area:article;
+.article {
+    grid-area: article;
+    text-align: center;
 }
 
-.titel{
+.article2 {
+    text-align: center;
+    grid-area: de;
+    margin-bottom: 10px;
+}
+
+.titel {
     grid-area: titel;
-    text-align:center;
+    text-align: center;
     font-family: monospace;
-    font-size: 5vh;
+    font-size: 40px;
 }
 
-.sadel{
-    grid-area: sadel;
+.bild {
+    grid-area: bild;
     display: grid;
-    grid-template-areas: 
-    "un un ov" 
-    "si si ov";   
-    height:70vh;
-    width: 30vw; 
-    justify-content: center;
-    margin-top: 10px;
-   
+    grid-template-areas: "un ov" "si ov";
+    grid-template-columns: 2fr 1.014fr;
+    height: auto;
+    width: 60%;
+    justify-self: center;
     gap: 10px;
 }
 
-.over{
+.over {
     grid-area: ov;
-    height:100%;
+    width: 100%;
 }
 
-.under{
+.under {
     grid-area: un;
-    height:100%;
+    width: 100%;
 }
-.sida{
+
+.sida {
     grid-area: si;
-    height: 100%;
-}   
-.flera{
-grid-area: flera;
+    width: 100%;
+}
+
+.flera {
+    grid-area: flera;
     display: grid;
-    grid-template-areas: 
-    "pi ri" 
-    "da ri";   
-    height:70vh;
-    width: 30vw; 
-    justify-content: center;
-    margin-top: 10px;
-   
-    gap: 10px; }
+    grid-template-areas: "pi ri" "da ri";
+    grid-template-columns: 2fr 1.025fr;
+    height: auto;
+    width: 60%;
+    justify-self: center;
+    gap: 10px;
+}
 
-.ring{
+.ring {
     grid-area: ri;
-    height:100%;
+    width: 100%;
 }
 
-.pisk{
+.pisk {
     grid-area: pi;
-    height:100%;
+    width: 100%;
 }
 
-.dack{
+.dack {
     grid-area: da;
-    height:100%;
+    width: 100%;
 }
+
+.number {
+    text-align: left;
+}
+
+.diverse {
+    padding-top: 30px;
+    grid-area: di;
+}
+
 
 /* Recensioner */
 
-.recensioner{
+.recensioner {
     display: grid;
-    grid-template-areas: "lv" ;
+    grid-template-areas: "rec dt";
 }
-.rec{
+
+.rec {
+    grid-area: rec;
     display: grid;
-    grid-template-areas: 
-    "hj mt"
-    "aj aj " ;   
-    height:70vh;
-    width:70vh;
-    margin-top: 10px;
-    margin: auto;
+    grid-template-areas: "hj mt" "aj aj";
+    height: 70vh;
+    width: 70vh;
+    margin: 50px;
 }
 
-.hj{
-    grid-area:hj;
-    height:100%;
+.hj {
+    grid-area: hj;
+    height: 100%;
 }
 
-.mt{
-    grid-area:mt;
-    height:100%;
+.mt {
+    grid-area: mt;
+    height: 100%;
 }
 
-.aj{
-    grid-area:aj;
-    height:100%;
+.aj {
+    grid-area: aj;
+    height: 100%;
+}
+
+.dt {
+    grid-area: dt;
+    margin: 50px;
 }
 
 
 /* Hem */
 
-#cykel{
-    min-width: 100%;
-    min-height: 100%;
-    height: auto;
+.Main_Header_Holder {
+    width: 70%;
+    right: 12.5%;
+    margin-top: 30px;
+    padding: 10px;
     position: absolute;
+    color: white;
+    background-color: rgba(77, 77, 77, 0.7);
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Main_Header {
+    margin: auto;
+    width: auto;
+}
+
+.description {
+    margin: auto;
+    width: auto;
+}
+
+.cykel_holder {
+    width: 100vw;
+}
+
+#cykel {
+    width: 100%;
+    height: auto;
     z-index: -1;
 }
 
-/*verkstad*/ 
 
-.verkstad{
-    display: grid;
-    grid-template-areas: 
-    "ar fe ve"
-    "ar fe pi";
-    height:70vh;
-    width: 70vw; 
-    justify-content: center;
-    margin: auto;
-}
-.saker{
-    width: 30%;
-    grid-area: ar;
-}
-.fett{
-    grid-area: fe;
-    height:100%;
+/*verkstad*/
+
+.verkstad {
+    display: flex;
 }
 
-.verktyg{
-    grid-area: ve;
-    height:100%;
+.bilder {
+    display: flex;
 }
 
-.piska{
-    grid-area: pi;
-    height:100%;
+.fett {
+    width: auto;
+    height: 70vh;
+    margin-top: 50px;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+
+.verktyg {
+    width: auto;
+    height: 35vh;
+}
+
+.piska {
+    width: auto;
+    height: 35vh;
+}
+
+.saker {
+    margin: 60px
 }
 
 
 /* Mobile Wiew */
+
 @media screen and (max-width: 965px) {
-  
-
-.hd{
-    display:grid;
-    grid-template-areas: 
-    "lg bt";
-    width: 100vw;
-    height: 50px;
-    position: fixed;
-    background-color: grey;
+    p {
+        font-size: 15px;
+    }
+    .hd {
+        display: grid;
+        grid-template-areas: "lg bt";
+        width: 100%;
+        height: 50px;
+        position: fixed;
+        background-color: grey;
+        margin: 0;
+        z-index: 2;
+    }
+    #logo {
+        width: 110px;
+        grid-area: lg;
+    }
+    .button {
+        width: 40px;
+        display: flex;
+        grid-area: bt;
+        right: 40px;
+        transition: transform 0.5s 0s ease;
+        justify-self: right;
+        margin: 5px;
+    }
+    #nv {
+        grid-template-areas: "nv1" "nv2" "nv3" "nv4" "nv5";
+        right: 30px;
+        position: fixed;
+        background: none;
+        width: 150px;
+        height: 400px;
+        overflow-x: hidden;
+        display: none;
+        top: 12%;
+        font-size: 10px;
+    }
+    .button.animate {
+        transform: rotate(90deg);
+        transition: transform 0.5s 0s ease;
+    }
+    #nv.show {
+        display: grid;
+    }
+    .current {
+        background-color: green !important;
+    }
+    a {
+        text-decoration: none;
+        text-align: center;
+        font-size: 150%;
+        color: black;
+    }
+    #nv1 {
+        grid-area: nv1;
+        background-color: gray;
+        border-radius: 3px;
+        border: 3px solid black;
+    }
+    #nv2 {
+        grid-area: nv2;
+        background-color: grey;
+        border-radius: 3px;
+        border: 3px solid black;
+    }
+    #nv3 {
+        grid-area: nv3;
+        background-color: grey;
+        border-radius: 3px;
+        border: 3px solid black;
+    }
+    #nv4 {
+        grid-area: nv4;
+        background-color: grey;
+        border-radius: 3px;
+        border: 3px solid black;
+    }
+    #nv5 {
+        grid-area: nv5;
+        background-color: grey;
+        border-radius: 3px;
+        border: 3px solid black;
+    }
+    .current {
+        background-color: green !important;
+    }
+    /* Gruppturer */
+    .grupp {
+        transform: translateY(50px);
+        display: grid;
+        grid-template-areas: "nv" "titel" "bildergrupp" "stats";
+        height: auto;
+    }
+    .bildergrupp {
+        grid-area: bildergrupp;
+        display: grid;
+        grid-template-areas: "vaag vaag" "fart arg" "mek mek";
+        grid-template-columns: 8fr 14.91fr;
+        gap: 10px;
+        width: 70%;
+        height: auto;
+        margin-top: 10px;
+        margin: auto;
+    }
+    .fart {
+        grid-area: fart;
+        width: 100%;
+        height: auto;
+    }
+    .vaag {
+        grid-area: vaag;
+        width: 100%;
+        height: auto;
+    }
+    .arg {
+        grid-area: arg;
+        width: 100%;
+        height: auto;
+    }
+    .mek {
+        grid-area: mek;
+        width: 100%;
+        height: auto;
+    }
+    .stats {
+        grid-area: stats;
+        display: grid;
+        grid-template-areas: "snitt strecka max";
+        height: auto;
+        width: 50%;
+        gap: 10px;
+    }
+    .snitt {
+        grid-area: snitt;
+        width: 100%;
+        height: auto;
+        background-color: gray;
+    }
+    .strecka {
+        grid-area: strecka;
+        width: 100%;
+        background-color: gray;
+        height: auto;
+    }
+    .max {
+        grid-area: max;
+        width: 100%;
+        background-color: gray;
+        height: auto;
+    }
+    /*Verkstad*/
+    .verkstad {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    .bilder {
+        width: 90%;
+        justify-content: center;
+    }
+    .fett {
+        width: 33%;
+        height: auto;
+        margin: 0;
+    }
+    .right {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        margin: 0;
+    }
+    .verktyg {
+        width: 100%;
+        height: auto;
+    }
+    .piska {
+        width: 100%;
+        height: auto;
+    }
+    /*recensioner*/
+    .recensioner {
+        display: grid;
+        grid-template-areas: "dt" "rec";
+        grid-template-rows: auto auto;
+        grid-template-columns: 100%;
+        margin: 0;
+        width: 90%;
+        margin: auto;
+    }
+    .dt {
+        transform: translateY(50px);
+        grid-area: dt;
+        width: 90%;
+        text-align: center;
+        margin: 0;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .rec {
+        display: grid;
+        grid-area: rec;
+        grid-template-areas: "hj mt" "aj aj";
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        width: 90%;
+        height: auto;
+        justify-self: center;
+    }
+    .hj {
+        grid-area: hj;
+        width: 100%;
+        height: auto;
+    }
+    .mt {
+        grid-area: mt;
+        width: 100%;
+        height: auto;
+    }
+    .aj {
+        grid-area: aj;
+        width: 100%;
+        height: auto;
+    }
+    .kopa {
+        text-align: center;
+        font-size: 5vw;
+        font-family: monospace;
+    }
+    .Header_Holder {
+        transform: translateY(50px);
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    .titel2 {
+        transform: translateY(50px);
+    }
 }
-
-#logo{
-    width: 110px;
-    grid-area:lg;
-}
-
-.button{ 
-    width: 40px;
-    display: flex;
-    grid-area:bt;
-    top: 5px;
-    position: fixed;
-    right:40px;
-    transition: transform 0.5s 0s ease;
-}
-
-#nv{
-    grid-template-areas: 
-    "nv1"
-    "nv2"
-    "nv3"
-    "nv4"
-    "nv5"
-    ;
-    right: 30px;
-    position: fixed; 
-    background:none;
-    width: 45%;
-    height:100vh;
-    overflow-x:hidden;
-    display: none;
-    top: 12%;
-}
-
-.button.animate{
-    transform: rotate(90deg);
-    transition: transform 0.5s 0s ease;
-    
-}
-
-#nv.show{
-    display: grid;
-
-}
-
-.current{
-    background-color: green !important;
-
-}
-
-a{
-    text-decoration: none;
-    text-align: center;
-    font-size: 150%;
-    color: black;
-}
-
-#nv1{
-    grid-area: nv1; 
-    background-color: gray;   
-    border-radius: 3px;
-    border: 3px solid black;
-}
-    
-#nv2{
-    grid-area: nv2;  
-    background-color: grey;   
-    border-radius: 3px;
-    border: 3px solid black;
-}
-    
-#nv3{
-    grid-area: nv3; 
-    background-color: grey;    
-    border-radius: 3px;
-    border: 3px solid black;
-}
-    
-#nv4{
-    grid-area: nv4;    
-    background-color: grey; 
-    border-radius: 3px;
-    border: 3px solid black;
-}
-    
-#nv5{
-    grid-area: nv5;  
-    background-color: grey;   
-    border-radius: 3px; 
-    border: 3px solid black;
-}
-
-
-.current{
-    background-color: green !important;
-}
-
-.button{ 
-    right:10px;
-    top:10px;
-}
-
-/* Gruppturer */
-.grupp{
-    display: grid;
-    grid-template-areas:
-    "nv"
-    "titel"
-    "bildergrupp"
-    "stats";
-    gap: 10px;
-    height: auto;
-    width: 100vw;
-}
-
-.bildergrupp{
-    grid-area:bildergrupp;
-    display: grid;
-    grid-template-areas:
-    "vaag vaag"
-    "fart arg"
-    "mek mek" ;
-    gap: 10px;
-    width: 70vw;
-    height: auto;
-    margin-top: 10px;
-    margin: auto;
-}
-
-.fart{
-    grid-area: fart;
-    width: auto;
-    height: 70vh;
-}
-
-.vaag{
-    grid-area: vaag;
-    width: 100%;
-    height: auto;
-
-}
-
-.arg{
-    grid-area: arg;
-    width: au;
-    height: 70vh;
-}
-
-.mek{
-    grid-area: mek;
-    width: 100%;
-    height: auto;
-}
-
-.stats{
-    grid-area: stats;
-    display: grid;
-    grid-template-areas:
-    "snitt strecka max";
-    height: 100%;
-    width:30%;
-    margin:auto;
-    gap: 10px;
-}
-
-.snitt{
-    grid-area: snitt;
-    width:auto;
-    height: 30px;
-    background-color:gray;
-    border-radius: 3px; 
-    border: 3px solid black;
-}
-
-
-.strecka{
-    grid-area: strecka;
-    width:auto;
-    background-color:gray;
-    height: 30px;
-    border-radius: 3px; 
-    border: 3px solid black;
-}
-
-
-.max{
-    grid-area: max;
-    width:auto;
-    background-color:gray;
-    height: 30px;
-    border-radius: 3px; 
-    border: 3px solid black;
-}
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

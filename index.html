@@ -9,51 +9,43 @@
     <link rel="stylesheet" href="css/style2.css">
 </head>
 
-<body>
+<body style="overflow-y: hidden;">
     <div class=hd>
+        <img class="button" src="img/Hamburger_icon.svg.png" alt="Meny">
 
-      
-            <img id="logo" src="img/BikeBikePNG.png" alt="Bike Bike">
+        <img id="logo" src="img/BikeBikePNG.png" alt="Bike Bike">
 
         <nav id=nv>
             <a id=nv1 class="current" href="index.html">
-                <h1>Hem</h1>
+                <h2>Hem</h2>
             </a>
-            <a  id=nv2 href="forsaljning.html">
-                <h1>Försäljning</h1>
+            <a id=nv2 href="forsaljning.html">
+                <h2>Försäljning</h2>
             </a>
             <a id=nv3 href="recensioner.html">
-                <h1>Recensioner</h1>
+                <h2>Recensioner</h2>
             </a>
             <a id=nv4 href="gruppturer.html">
-                <h1>Gruppturer</h1>
+                <h2>Gruppturer</h2>
             </a>
             <a id=nv5 href="verkstad.html">
-                <h1>Verkstad</h1>
+                <h2>Verkstad</h2>
             </a>
         </nav>
 
     </div>
-    <img class="button" src="img/Hamburger_icon.svg.png" alt="Meny">
-    <div id="grclass1">
 
-        <header class=titel>Välkommen</header>
-           
-            
-         
+
+    <div class="Main_Header_Holder">
+        <h1 class="Main_header">Välkommen</h1>
+        <article class=description>
+            <h4>Detta är min cykel blogg/försäljningsida där jag kommer att hålla jämna uppdateringar om mina cykeläventyr och sälja delar som jag inte behöver.</h4>
+        </article>
     </div>
-
-    <footer>
-        <a class="Planering" href="misc/planering.html"> Planering </a>
-    </footer>
-
-    
-    <img id=cykel src="img/Cykel.jpg" alt="Bild på Cykel">
-    
-
-
+    <div class="cykel_holder">
+        <img id=cykel src="img/Cykel.jpg" alt="Bild på Cykel">
+    </div>
+    <script src="js/Main.js"></script>
 </body>
-
-<script src="js/Main.js"></script>
 
 </html>
